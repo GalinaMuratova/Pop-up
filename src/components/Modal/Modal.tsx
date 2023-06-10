@@ -19,7 +19,7 @@ const Modal:React.FC<Props> = ({show, title, onClose, children}) => {
                     <div className="modal-content">
                         <div className="modal-header">
                             <h1 className="modal-title fs-5">{title}</h1>
-                            <button type='button' className='cross' onClick={onClose}></button>
+                            <button type='button' className='cross cross-modal' onClick={onClose}></button>
                         </div>
                         {children}
                     </div>

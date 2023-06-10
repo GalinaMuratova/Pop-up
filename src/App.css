@@ -1,19 +1,23 @@
-.App {
-  text-align: center;
+
+.cross-modal {
+  background-image: url("https://ikonki.svgpng.ru/wp-content/uploads/2021/10/Oshibkasvgpng.ru-7-128x128.png");
 }
 
 .cross {
-  background-image: url("https://ikonki.svgpng.ru/wp-content/uploads/2021/10/Oshibkasvgpng.ru-7-128x128.png");
   background-repeat: no-repeat;
   background-size: contain;
-  background-color: white;
+  background-color: transparent;
   width: 40px;
   height: 40px;
   border: none;
   transition: all 0.6ms;
 }
 
-.cross:hover {
+.cross-modal:hover {
   background-image: url("https://ikonki.svgpng.ru/wp-content/uploads/2021/10/Oshibkasvgpng.ru_-1-128x128.png");
   transition: all 0.6ms;
+}
+
+.cross-alert {
+  background-image: url("https://cdn-icons-png.flaticon.com/512/8212/8212742.png");
 }
