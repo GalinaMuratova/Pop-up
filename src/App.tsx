@@ -6,7 +6,7 @@ import Alert from "./components/Alert/Alert";
 const App = () => {
     const [showModal, setModal] = useState(false);
     const cancel = () => setModal(false);
-    const dismiss = () => console.log("close")
+    const dismiss = () => console.log("close");
   return (
       <>
           <div className="text-center">
@@ -28,13 +28,13 @@ const App = () => {
               </div>
           </Modal>
           <Alert type="warning-subtle" onDismiss={dismiss}>
-              <p>This is a warning type alert</p>
+              <p className="p-2">This is a warning type alert</p>
           </Alert>
           <Alert type="success-subtle">
-              <p>This is a success type alert</p>
+              <p className="p-2">This is a success type alert</p>
           </Alert>
           <Alert type="danger-subtle">
-              <p>This is a danger type alert</p>
+              <p className="p-2">This is a danger type alert</p>
           </Alert>
       </>
   );

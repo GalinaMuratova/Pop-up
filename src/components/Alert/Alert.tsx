@@ -6,7 +6,8 @@ interface Props extends React.PropsWithChildren{
 }
 
 const Alert:React.FC<Props> = ({type, onDismiss, children}) => {
-    const className = `bg-${type} mx-auto my-3 text-secondary p-2 w-50 d-flex justify-content-between rounded`
+    const className = `bg-${type} mx-auto my-3 text-secondary p-2 w-50 d-flex justify-content-between rounded`;
+
     if (onDismiss === undefined) {
         return (
             <>
@@ -16,10 +17,9 @@ const Alert:React.FC<Props> = ({type, onDismiss, children}) => {
             </>
         );
     }
-
     return (
         <>
-         <div className={className}>
+         <div className={className} style={{display: 'block' }} >
              {children}
              <button type='button' className='cross-alert cross' onClick={onDismiss}></button>
          </div>
